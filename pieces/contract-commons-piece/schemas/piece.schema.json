@@ -5,7 +5,7 @@
   "properties": {
     "consumes": {
       "items": {
-        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9.-]*:[0-9]+\\.[0-9]+\\.[0-9]+)$",
+        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9_.-]*:(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*))$",
         "type": "string"
       },
       "type": "array",
@@ -13,7 +13,7 @@
     },
     "generatorConsumes": {
       "items": {
-        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9.-]*:[0-9]+\\.[0-9]+\\.[0-9]+)$",
+        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9_.-]*:(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*))$",
         "type": "string"
       },
       "type": "array",
@@ -21,7 +21,7 @@
     },
     "implements": {
       "items": {
-        "pattern": "^urn:easyly:schema:[a-z][a-z0-9.-]*:[0-9]+\\.[0-9]+\\.[0-9]+$",
+        "pattern": "^urn:easyly:schema:[a-z][a-z0-9_.-]*:(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$",
         "type": "string"
       },
       "type": "array",
@@ -44,7 +44,7 @@
     },
     "testConsumes": {
       "items": {
-        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9.-]*:[0-9]+\\.[0-9]+\\.[0-9]+)$",
+        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9_.-]*:(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*))$",
         "type": "string"
       },
       "type": "array",
@@ -67,7 +67,7 @@
             "type": "string"
           },
           "version": {
-            "pattern": "^v?(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-[0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*)?(\\+[0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*)?$",
+            "pattern": "^v?(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-(0|[1-9][0-9]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*)(\\.(0|[1-9][0-9]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*))*)?(\\+[0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*)?$",
             "type": "string"
           }
         },

@@ -137,8 +137,16 @@
       "sha256": "35ac8fe5f226bb8d24a7be1c0b8b01d4dafdb337b43122a982c787dcce48e3c6"
     },
     {
+      "path": "pieces/contract-commons-piece/cases/piece/pattern-prerelease-leading-zero-fail.json",
+      "sha256": "c41bd04d642200c96430fd256d66d24577070588078d948d8f8c7a0c495c43e6"
+    },
+    {
       "path": "pieces/contract-commons-piece/cases/piece/pattern-pseudo-version-pass.json",
       "sha256": "8c906d0c83cd61b7ac65af9a46dd838e804433886899f1a78ba56a6fc694015d"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/pattern-urn-leading-zero-fail.json",
+      "sha256": "58c7ff043faed18b113deaa96de13793b4f2acec5ac83a1046101b38a7b51daa"
     },
     {
       "path": "pieces/contract-commons-piece/cases/piece/pattern-vendor-escape-fail.json",
@@ -194,7 +202,7 @@
     },
     {
       "path": "pieces/contract-commons-piece/schemas/piece.schema.json",
-      "sha256": "186d241d37b4f449d92151cde7d32ef52ca4bcb78b982edd3502c75d8b01bc8f"
+      "sha256": "21ef91dd31ebd0c59131705499f20fbb29ea0427012b1bcac698f7a1be32701a"
     }
   ]
 }
