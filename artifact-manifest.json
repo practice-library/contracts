@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "path": ".github/CODEOWNERS",
+      "sha256": "49249db07c25228412d64abc5cb64614155b8bebbacae172409c33ef8b35346e"
+    },
+    {
+      "path": ".github/denylist.json",
+      "sha256": "6988f8a20f04395582c87185bf34eaf7edc78cd548966a3cc048dd345fe229d7"
+    },
+    {
+      "path": ".github/required-checks.json",
+      "sha256": "fd94a73da7333f22a2fda067dfd17c5c31f23c606cc9d7f9864e9c76c381a483"
+    },
+    {
+      "path": ".github/workflows/gate.yml",
+      "sha256": "aff20737a4827090cb19867fbfbcc65cb743725507a82ca8be3ddee86995aa0d"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "d977f274dd2d422fdf5b51e9e8fa375c3f5e1769dbeb9ed7594f5249d1259041"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "README.md",
+      "sha256": "361a69cb487f4763d4550a6badb812ee9632bae30f9ee2a72c59eea384eec313"
+    },
+    {
+      "path": "go.mod",
+      "sha256": "b00327f66aa7702efecb1359244e79a6a27b9bee03cf6d1195ba1ef3ea4df5c3"
+    }
+  ]
+}

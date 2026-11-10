@@ -1,0 +1,81 @@
+name: gate
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  leak-scan:
+    uses: practice-library/.github/.github/workflows/leak-scan.yml@fa14c82916585c4e3357985a0433e60123f3b91d # v3.1.0
+  denylist:
+    permissions:
+      contents: read
+      pull-requests: read
+    uses: practice-library/.github/.github/workflows/guard.yml@fa14c82916585c4e3357985a0433e60123f3b91d # v3.1.0
+    with:
+      guard: denylist
+  removed-paths:
+    permissions:
+      contents: read
+      pull-requests: read
+    uses: practice-library/.github/.github/workflows/guard.yml@fa14c82916585c4e3357985a0433e60123f3b91d # v3.1.0
+    with:
+      guard: removed-paths
+  release-note:
+    permissions:
+      contents: read
+      pull-requests: read
+    uses: practice-library/.github/.github/workflows/guard.yml@fa14c82916585c4e3357985a0433e60123f3b91d # v3.1.0
+    with:
+      guard: release-note
+      watch: '["pieces/"]'
+      changelog: CHANGES.md
+  schema-loosening:
+    permissions:
+      contents: read
+      pull-requests: read
+    uses: practice-library/.github/.github/workflows/guard.yml@fa14c82916585c4e3357985a0433e60123f3b91d # v3.1.0
+    with:
+      guard: schema-loosening
+  size:
+    permissions:
+      contents: read
+      pull-requests: read
+    uses: practice-library/.github/.github/workflows/guard.yml@fa14c82916585c4e3357985a0433e60123f3b91d # v3.1.0
+    with:
+      guard: size
+      size-fixtures: '["selftest/","examples/","counter-examples/","tests/fixtures/","vendor/","go.sum","inventory.json","cases/"]'
+  go:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: go.mod
+          cache: false
+      - name: Build and vet, offline, from the vendored tree
+        env:
+          GOFLAGS: -mod=vendor
+          GOPROXY: "off"
+        run: |
+          if [ -z "$(go list ./... 2>/dev/null)" ]; then echo "no Go packages yet: build, vet and test have nothing to check"; exit 0; fi
+          go build ./...
+          go vet ./...
+      - name: Test, offline
+        env:
+          GOFLAGS: -mod=vendor
+          GOPROXY: "off"
+        run: |
+          if [ -z "$(go list ./... 2>/dev/null)" ]; then exit 0; fi
+          go test ./...
+  gate:
+    if: always()
+    needs: ["leak-scan","denylist","removed-paths","release-note","schema-loosening","size","go"]
+    uses: practice-library/.github/.github/workflows/gate.yml@fa14c82916585c4e3357985a0433e60123f3b91d # v3.1.0
+    with:
+      needs: ${{ toJSON(needs) }}
