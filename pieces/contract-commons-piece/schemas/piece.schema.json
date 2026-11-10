@@ -21,7 +21,7 @@
     },
     "implements": {
       "items": {
-        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9.-]*:[0-9]+\\.[0-9]+\\.[0-9]+)$",
+        "pattern": "^urn:easyly:schema:[a-z][a-z0-9.-]*:[0-9]+\\.[0-9]+\\.[0-9]+$",
         "type": "string"
       },
       "type": "array",
@@ -55,11 +55,11 @@
         "additionalProperties": false,
         "properties": {
           "name": {
-            "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]*$",
+            "pattern": "^@?[A-Za-z0-9_~+-][A-Za-z0-9._~+-]*(/[A-Za-z0-9_~+-][A-Za-z0-9._~+-]*)*$",
             "type": "string"
           },
           "path": {
-            "pattern": "^vendor/[A-Za-z0-9._/-]+$",
+            "pattern": "^vendor(/[A-Za-z0-9_~+-][A-Za-z0-9._~+-]*)+$",
             "type": "string"
           },
           "sha256": {
@@ -67,7 +67,7 @@
             "type": "string"
           },
           "version": {
-            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+            "pattern": "^v?(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(-[0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*)?(\\+[0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*)?$",
             "type": "string"
           }
         },
@@ -79,7 +79,8 @@
         ],
         "type": "object"
       },
-      "type": "array"
+      "type": "array",
+      "uniqueItems": true
     },
     "tier": {
       "minimum": 0,
