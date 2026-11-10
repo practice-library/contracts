@@ -1,0 +1,101 @@
+{
+  "$id": "urn:easyly:schema:commons.piece:0.1.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "consumes": {
+      "items": {
+        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9.-]*:[0-9]+\\.[0-9]+\\.[0-9]+)$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "generatorConsumes": {
+      "items": {
+        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9.-]*:[0-9]+\\.[0-9]+\\.[0-9]+)$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "implements": {
+      "items": {
+        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9.-]*:[0-9]+\\.[0-9]+\\.[0-9]+)$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "kind": {
+      "enum": [
+        "contract",
+        "binding",
+        "library",
+        "tool",
+        "plug",
+        "runtime"
+      ],
+      "type": "string"
+    },
+    "owner": {
+      "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*$",
+      "type": "string"
+    },
+    "testConsumes": {
+      "items": {
+        "pattern": "^(pieces/[a-z][a-z0-9-]*|urn:easyly:schema:[a-z][a-z0-9.-]*:[0-9]+\\.[0-9]+\\.[0-9]+)$",
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "thirdParty": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]*$",
+            "type": "string"
+          },
+          "path": {
+            "pattern": "^vendor/[A-Za-z0-9._/-]+$",
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "version": {
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "version",
+          "sha256",
+          "path"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "tier": {
+      "minimum": 0,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "kind",
+    "implements",
+    "consumes",
+    "testConsumes",
+    "generatorConsumes",
+    "thirdParty",
+    "owner",
+    "tier"
+  ],
+  "title": "commons piece",
+  "type": "object"
+}

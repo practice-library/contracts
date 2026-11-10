@@ -31,6 +31,150 @@
     {
       "path": "go.mod",
       "sha256": "b00327f66aa7702efecb1359244e79a6a27b9bee03cf6d1195ba1ef3ea4df5c3"
+    },
+    {
+      "path": "pieces/contract-commons-piece/README.md",
+      "sha256": "cf0624a0f38fcb4ebb0299c5d135cc2589cd982f2c250425bd670b1a81dd5d46"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/$ref-fail.json",
+      "sha256": "a3477e90e91d043376b4a75ecfeb45cbfaed0cb96d4d01979d1faa619af9f275"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/$ref-pass.json",
+      "sha256": "0c098ca4382e6da6861da7dc20e1c17420b7863fc1bfa0502aea6a104abf7829"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/additionalProperties-fail.json",
+      "sha256": "05ac020870dcc7538af098a7699ce0f584d2c6977541e6c67a0f82a1f0fb5d21"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/additionalProperties-pass.json",
+      "sha256": "0c098ca4382e6da6861da7dc20e1c17420b7863fc1bfa0502aea6a104abf7829"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/items-fail.json",
+      "sha256": "6f0e8a3066c431c97c9312494f506f353e4496fa3316daa77156fd7ceff7e9ec"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/items-pass.json",
+      "sha256": "0c098ca4382e6da6861da7dc20e1c17420b7863fc1bfa0502aea6a104abf7829"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/pattern-fail.json",
+      "sha256": "93f6e1f83f8c9f87c7ab9c4a8329a5b6cd710f31d55b9158315f9bddcef8e92e"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/pattern-pass.json",
+      "sha256": "0c098ca4382e6da6861da7dc20e1c17420b7863fc1bfa0502aea6a104abf7829"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/properties-fail.json",
+      "sha256": "fcac68902a785e86e0eb09cd08d58f36d50b87071a43fae173e4f54ddd87bb7d"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/properties-pass.json",
+      "sha256": "0c098ca4382e6da6861da7dc20e1c17420b7863fc1bfa0502aea6a104abf7829"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/required-fail.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/required-pass.json",
+      "sha256": "0c098ca4382e6da6861da7dc20e1c17420b7863fc1bfa0502aea6a104abf7829"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/type-fail.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/inventory/type-pass.json",
+      "sha256": "0c098ca4382e6da6861da7dc20e1c17420b7863fc1bfa0502aea6a104abf7829"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/additionalProperties-fail.json",
+      "sha256": "74807d3e0d4690cbea0070bfdfc6bf5bf53e5c150a4272813604e05978d3cbb1"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/additionalProperties-pass.json",
+      "sha256": "49207254dfbb55df6ec8668d9bf4b8ee3a5900267d4b4c4e18c1017fbc90bb4a"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/enum-fail.json",
+      "sha256": "9072c46695d1a1eedd17153d8d359271de8f1e3eecca542f02f49b785aaf8f25"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/enum-pass.json",
+      "sha256": "49207254dfbb55df6ec8668d9bf4b8ee3a5900267d4b4c4e18c1017fbc90bb4a"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/items-fail.json",
+      "sha256": "ea292841925df5b3d91205b98ba165960a1249ea9c0d2d57e79dd11631400870"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/items-pass.json",
+      "sha256": "49207254dfbb55df6ec8668d9bf4b8ee3a5900267d4b4c4e18c1017fbc90bb4a"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/minimum-fail.json",
+      "sha256": "5c3035da1b36c776d3c8b7a01f8b39653680b02fa814ac1b0982e8a0fd4f6c5b"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/minimum-pass.json",
+      "sha256": "cedff961419fee936046b39c9f7ff8d2224f8aa7704e367724fd01271d2ca98a"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/pattern-fail.json",
+      "sha256": "9974349073173936c1a3ebddf038e5606e5367facd32b3229ec369cd64268a75"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/pattern-pass.json",
+      "sha256": "49207254dfbb55df6ec8668d9bf4b8ee3a5900267d4b4c4e18c1017fbc90bb4a"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/properties-fail.json",
+      "sha256": "667b4688249880bb8d0455d4fa5386fc2182f93dfc96fea7857452dcc3ba28ce"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/properties-pass.json",
+      "sha256": "49207254dfbb55df6ec8668d9bf4b8ee3a5900267d4b4c4e18c1017fbc90bb4a"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/required-fail.json",
+      "sha256": "9b31dd58e498e34d37d673371ff850c674c7ca4840567df72f6166adc20dfb2a"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/required-pass.json",
+      "sha256": "49207254dfbb55df6ec8668d9bf4b8ee3a5900267d4b4c4e18c1017fbc90bb4a"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/type-fail.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/type-pass.json",
+      "sha256": "49207254dfbb55df6ec8668d9bf4b8ee3a5900267d4b4c4e18c1017fbc90bb4a"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/uniqueItems-fail.json",
+      "sha256": "89d94903307a323d2c034898d94d73f44809de99fa796941e5238c2152600a74"
+    },
+    {
+      "path": "pieces/contract-commons-piece/cases/piece/uniqueItems-pass.json",
+      "sha256": "49207254dfbb55df6ec8668d9bf4b8ee3a5900267d4b4c4e18c1017fbc90bb4a"
+    },
+    {
+      "path": "pieces/contract-commons-piece/piece.json",
+      "sha256": "6b0a9ca92444c4fccb25478c12825ef8c909e13dea6d5ea04f80f2542dd3f8d2"
+    },
+    {
+      "path": "pieces/contract-commons-piece/schemas/inventory.schema.json",
+      "sha256": "c305ab094c0dd23fde0ac531606bb83289247f02b66230063ba589ff876a217c"
+    },
+    {
+      "path": "pieces/contract-commons-piece/schemas/piece.schema.json",
+      "sha256": "04f168ed3b5814e4746d50811b3ea9fac77830d4ccae8c4a9c74c036cde5f286"
     }
   ]
 }
