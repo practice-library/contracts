@@ -113,6 +113,14 @@
       "sha256": "43a024f39cafc72f51a09519b5b7ac4a57cdc8a658fe9b9d8976845b518fc116"
     },
     {
+      "path": "pieces/contract-commons-at-report/cases/at-report/minItems-fail.json",
+      "sha256": "e479f20d093ae8332611435356f4502884ba093438e97478c476c60f16c016a4"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/minItems-pass.json",
+      "sha256": "364f5bad05301e3d969b24ba0f8012c645953604d16d9c21cba37e2c7dfe7703"
+    },
+    {
       "path": "pieces/contract-commons-at-report/cases/at-report/minLength-fail.json",
       "sha256": "b28703a449a9336eaae3299b2dcd6ed5971dd4086381f072763401c10c054233"
     },
@@ -266,7 +274,7 @@
     },
     {
       "path": "pieces/contract-commons-at-report/schemas/at-report.schema.json",
-      "sha256": "6b47f295976864a2e061fef59cb2178c988cab87d41127005e5a097ae9815322"
+      "sha256": "5aa219d228c2f9fb5ac36dae44dafb24ac90d15735ff10c943d9a64913606e62"
     },
     {
       "path": "pieces/contract-commons-at-report/schemas/codes.schema.json",

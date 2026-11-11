@@ -3,6 +3,22 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "additionalProperties": false,
   "else": {
+    "else": {
+      "if": {
+        "properties": {
+          "code": {
+            "type": "null"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "findings": {
+            "minItems": 1
+          }
+        }
+      }
+    },
     "if": {
       "properties": {
         "status": {
