@@ -1,0 +1,102 @@
+{
+  "$id": "urn:easyly:schema:commons.at-report:0.1.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "else": {
+    "properties": {
+      "code": {
+        "type": "string"
+      }
+    }
+  },
+  "if": {
+    "properties": {
+      "status": {
+        "enum": [
+          "PASS"
+        ]
+      }
+    }
+  },
+  "properties": {
+    "at": {
+      "pattern": "^AT-(0[1-9]|1[0-8])$",
+      "type": "string"
+    },
+    "code": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "urn:easyly:schema:commons.codes:0.1.0#/$defs/code"
+        }
+      ]
+    },
+    "command": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "commit": {
+      "pattern": "^[0-9a-f]{40}$",
+      "type": "string"
+    },
+    "counts": {
+      "additionalProperties": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "object"
+    },
+    "findings": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "line": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "message": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "path": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "message"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "NOT_RUN"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "at",
+    "command",
+    "commit",
+    "status",
+    "code",
+    "counts",
+    "findings"
+  ],
+  "then": {
+    "properties": {
+      "code": {
+        "type": "null"
+      }
+    }
+  },
+  "title": "commons AT report",
+  "type": "object"
+}
