@@ -1,0 +1,32 @@
+{
+  "$id": "urn:easyly:schema:commons.inventory:0.1.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "pieces": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "pattern": "^pieces/[a-z][a-z0-9-]*$",
+            "type": "string"
+          },
+          "piece": {
+            "$ref": "urn:easyly:schema:commons.piece:0.1.0"
+          }
+        },
+        "required": [
+          "path",
+          "piece"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "pieces"
+  ],
+  "title": "commons inventory",
+  "type": "object"
+}
