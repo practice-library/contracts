@@ -34,7 +34,7 @@
     },
     {
       "path": "pieces/contract-commons-at-report/README.md",
-      "sha256": "006a162ad29cf12135be8796007485a9f3ac4035af10f2c8818807a3fc6b82cb"
+      "sha256": "7807ba40c7553e67c20a151cbde8f8c9bf4f064b5298f71a995ed989ce74da78"
     },
     {
       "path": "pieces/contract-commons-at-report/cases/at-report/$ref-fail.json",
@@ -61,12 +61,28 @@
       "sha256": "7a32d6d61a2cf8b8f74c7a73d6d19bc7fed89d268b0759c658de15981f29ae46"
     },
     {
+      "path": "pieces/contract-commons-at-report/cases/at-report/dependentRequired-fail.json",
+      "sha256": "99971719d280d0ce88e5a711d00ac17a6165e7164b5e9de72a06235dd6500ec3"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/dependentRequired-pass.json",
+      "sha256": "15aa53efa2bec04c3850062d9947a4038331398d114f843be2e306673462af1f"
+    },
+    {
       "path": "pieces/contract-commons-at-report/cases/at-report/else-fail.json",
-      "sha256": "e479f20d093ae8332611435356f4502884ba093438e97478c476c60f16c016a4"
+      "sha256": "34710ba1cef22939ae0fe0d0054da9e6709af5071626bcdfb8de1124da86bf6c"
     },
     {
       "path": "pieces/contract-commons-at-report/cases/at-report/else-pass.json",
-      "sha256": "7a32d6d61a2cf8b8f74c7a73d6d19bc7fed89d268b0759c658de15981f29ae46"
+      "sha256": "e4046ae4498b8f81dc6eb545eacf3f6268fe5940138526ddc7ed82dc79240420"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/else-status-fail-null-code-pass.json",
+      "sha256": "364f5bad05301e3d969b24ba0f8012c645953604d16d9c21cba37e2c7dfe7703"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/else-status-fail-with-code-pass.json",
+      "sha256": "e41736f3725453c031fb8f88962f17f8c5fb0dec01a67c3f66726e7115d8744d"
     },
     {
       "path": "pieces/contract-commons-at-report/cases/at-report/enum-fail.json",
@@ -110,11 +126,11 @@
     },
     {
       "path": "pieces/contract-commons-at-report/cases/at-report/minimum-fail.json",
-      "sha256": "eb21b91e737e2e325882529dcde56f6b37f38facdd5112fd1585451f98fcf15d"
+      "sha256": "9fb2d39bfbb706cfe6744bf77545dc0a212e76d635d0ff665182974cd0c4e354"
     },
     {
       "path": "pieces/contract-commons-at-report/cases/at-report/minimum-pass.json",
-      "sha256": "99a778ef28ea5ac3c60445c42acb7bdb396ba760c6719e7cc079dbf5d9ea2ab2"
+      "sha256": "5193ef253dd824f3b8a8403096c397bdbd49049b4ced61023e857096ec2e6aaa"
     },
     {
       "path": "pieces/contract-commons-at-report/cases/at-report/pattern-at-out-of-range-fail.json",
@@ -189,14 +205,6 @@
       "sha256": "743e327fb6e9d8d054cc966e61a10953f2989e03b98648fedfb161ad0a90d9d5"
     },
     {
-      "path": "pieces/contract-commons-at-report/cases/codes/else-fail.json",
-      "sha256": "edeadc624773ed6e26576aac6be52a00daf842ce618d1b4a2d4db147a6490e50"
-    },
-    {
-      "path": "pieces/contract-commons-at-report/cases/codes/else-pass.json",
-      "sha256": "743e327fb6e9d8d054cc966e61a10953f2989e03b98648fedfb161ad0a90d9d5"
-    },
-    {
       "path": "pieces/contract-commons-at-report/cases/codes/enum-exit-two-fail.json",
       "sha256": "14378a227d391c86b3486e4222767df349bccef017f9237b414f2e4c44e6d026"
     },
@@ -207,6 +215,10 @@
     {
       "path": "pieces/contract-commons-at-report/cases/codes/enum-pass.json",
       "sha256": "a7925ad1f99fcaca302674fc84256c6bb09d5806ce5f9ca6f8d49e809d41c1ff"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/if-exit-one-null-code-pass.json",
+      "sha256": "edeadc624773ed6e26576aac6be52a00daf842ce618d1b4a2d4db147a6490e50"
     },
     {
       "path": "pieces/contract-commons-at-report/cases/codes/if-fail.json",
@@ -254,11 +266,11 @@
     },
     {
       "path": "pieces/contract-commons-at-report/schemas/at-report.schema.json",
-      "sha256": "2c56b9f0f6cdb4188c13491d66d922721d868138619604eb7d46c2762b97ded6"
+      "sha256": "6b47f295976864a2e061fef59cb2178c988cab87d41127005e5a097ae9815322"
     },
     {
       "path": "pieces/contract-commons-at-report/schemas/codes.schema.json",
-      "sha256": "5a63167a7c242d025ac80d7a07021baf60734301838f6f6361f7e42611bc0aba"
+      "sha256": "44d0b0785b99d121712a237da69f20053fb463d1a39ce7128e192a0882e50965"
     },
     {
       "path": "pieces/contract-commons-piece/README.md",

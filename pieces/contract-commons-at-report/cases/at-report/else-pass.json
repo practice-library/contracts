@@ -1,1 +1,1 @@
-{"at": "AT-04", "command": "affected", "commit": "0123456789abcdef0123456789abcdef01234567", "status": "FAIL", "code": "commons.inconclusive", "counts": {"files": 3}, "findings": []}
+{"at": "AT-04", "command": "affected", "commit": "0123456789abcdef0123456789abcdef01234567", "status": "NOT_RUN", "code": "commons.at_not_implemented", "counts": {"files": 3}, "findings": []}

@@ -1,1 +1,1 @@
-{"at": "AT-04", "command": "affected", "commit": "0123456789abcdef0123456789abcdef01234567", "status": "FAIL", "code": null, "counts": {"files": 3}, "findings": []}
+{"at": "AT-04", "command": "affected", "commit": "0123456789abcdef0123456789abcdef01234567", "status": "NOT_RUN", "code": null, "counts": {"files": 3}, "findings": []}

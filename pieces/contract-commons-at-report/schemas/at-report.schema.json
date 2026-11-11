@@ -3,9 +3,20 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "additionalProperties": false,
   "else": {
-    "properties": {
-      "code": {
-        "type": "string"
+    "if": {
+      "properties": {
+        "status": {
+          "enum": [
+            "NOT_RUN"
+          ]
+        }
+      }
+    },
+    "then": {
+      "properties": {
+        "code": {
+          "type": "string"
+        }
       }
     }
   },
@@ -51,6 +62,11 @@
     "findings": {
       "items": {
         "additionalProperties": false,
+        "dependentRequired": {
+          "line": [
+            "path"
+          ]
+        },
         "properties": {
           "line": {
             "minimum": 1,

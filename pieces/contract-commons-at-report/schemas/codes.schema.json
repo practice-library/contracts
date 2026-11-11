@@ -20,13 +20,6 @@
   "$id": "urn:easyly:schema:commons.codes:0.1.0",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "additionalProperties": false,
-  "else": {
-    "properties": {
-      "code": {
-        "type": "string"
-      }
-    }
-  },
   "if": {
     "properties": {
       "exit": {
