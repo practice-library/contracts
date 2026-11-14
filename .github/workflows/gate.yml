@@ -50,6 +50,21 @@ jobs:
   go:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    defaults:
+      run:
+        shell: bash
+    env:
+      GOFLAGS: -mod=readonly
+      GOPROXY: https://proxy.golang.org
+      GOSUMDB: sum.golang.org
+      GONOSUMDB: ""
+      GONOSUMCHECK: ""
+      GONOPROXY: ""
+      GOPRIVATE: ""
+      GOINSECURE: ""
+      GOVCS: "*:off"
+      GOTOOLCHAIN: local
+      GOWORK: "off"
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -58,21 +73,37 @@ jobs:
         with:
           go-version-file: go.mod
           cache: false
-      - name: Build and vet, offline, from the vendored tree
-        env:
-          GOFLAGS: -mod=vendor
-          GOPROXY: "off"
+      - name: Module settings, verified download only
         run: |
-          if [ -z "$(go list ./... 2>/dev/null)" ]; then echo "no Go packages yet: build, vet and test have nothing to check"; exit 0; fi
+          test "$(go env GOFLAGS)" = "-mod=readonly"
+          test "$(go env GOPROXY)" = "https://proxy.golang.org"
+          test "$(go env GOSUMDB)" = "sum.golang.org"
+          test -z "$(go env GONOSUMDB)$(go env GONOPROXY)$(go env GOPRIVATE)$(go env GOINSECURE)${GONOSUMCHECK:-}"
+          test "$(go env GOVCS)" = "*:off"
+          test "$(go env GOTOOLCHAIN)" = "local"
+          test "$(go env GOWORK)" = "off"
+          echo "modules come only from the proxy and are checked against go.sum"
+      - name: Download and verify modules against go.sum
+        run: |
+          go mod edit -json | jq -r '.Require // [] | .[] | "\(.Path) \(.Version)"' | while read -r m v; do
+            grep -qF "$m $v h1:" go.sum && grep -qF "$m $v/go.mod h1:" go.sum || { echo "go.sum lacks $m $v"; exit 1; }
+          done
+          go mod download
+          go mod verify
+          git diff --exit-code -- go.mod go.sum
+      - name: Build and vet
+        run: |
+          pkgs="$(go list ./...)" || exit 1
+          if [ -z "$pkgs" ]; then echo "no Go packages yet: build, vet and test have nothing to check"; exit 0; fi
           go build ./...
           go vet ./...
-      - name: Test, offline
-        env:
-          GOFLAGS: -mod=vendor
-          GOPROXY: "off"
+          git diff --exit-code -- go.mod go.sum
+      - name: Test
         run: |
-          if [ -z "$(go list ./... 2>/dev/null)" ]; then exit 0; fi
+          pkgs="$(go list ./...)" || exit 1
+          if [ -z "$pkgs" ]; then exit 0; fi
           go test ./...
+          git diff --exit-code -- go.mod go.sum
   gate:
     if: always()
     needs: ["leak-scan","denylist","removed-paths","release-note","schema-loosening","size","go"]
