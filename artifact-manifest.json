@@ -33,6 +33,254 @@
       "sha256": "b00327f66aa7702efecb1359244e79a6a27b9bee03cf6d1195ba1ef3ea4df5c3"
     },
     {
+      "path": "pieces/contract-commons-at-report/README.md",
+      "sha256": "7807ba40c7553e67c20a151cbde8f8c9bf4f064b5298f71a995ed989ce74da78"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/$ref-fail.json",
+      "sha256": "9a6bb0d368003ab6a3994bcc61c4344cfdcd3d5526b1b4be4785259aca9ba966"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/$ref-pass.json",
+      "sha256": "e41736f3725453c031fb8f88962f17f8c5fb0dec01a67c3f66726e7115d8744d"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/additionalProperties-fail.json",
+      "sha256": "0444664658e64f67dc8f6439c3d6f3c9883cbb99aa2d13f8bb81944ee98071c9"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/additionalProperties-pass.json",
+      "sha256": "4037588053b616202edb83a64e1bfa584ceefd14f73b9851e35faad1825b65d1"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/anyOf-fail.json",
+      "sha256": "5165e36e8c76668196ae217f3a1e390c71becd28da9580670ffd5270f47dd60f"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/anyOf-pass.json",
+      "sha256": "7a32d6d61a2cf8b8f74c7a73d6d19bc7fed89d268b0759c658de15981f29ae46"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/dependentRequired-fail.json",
+      "sha256": "99971719d280d0ce88e5a711d00ac17a6165e7164b5e9de72a06235dd6500ec3"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/dependentRequired-pass.json",
+      "sha256": "15aa53efa2bec04c3850062d9947a4038331398d114f843be2e306673462af1f"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/else-fail.json",
+      "sha256": "34710ba1cef22939ae0fe0d0054da9e6709af5071626bcdfb8de1124da86bf6c"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/else-pass.json",
+      "sha256": "e4046ae4498b8f81dc6eb545eacf3f6268fe5940138526ddc7ed82dc79240420"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/else-status-fail-null-code-pass.json",
+      "sha256": "364f5bad05301e3d969b24ba0f8012c645953604d16d9c21cba37e2c7dfe7703"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/else-status-fail-with-code-pass.json",
+      "sha256": "e41736f3725453c031fb8f88962f17f8c5fb0dec01a67c3f66726e7115d8744d"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/enum-fail.json",
+      "sha256": "55b9ab7fb3c4091cdea4c9c651f4775ec5bc40e2c79cdd7462e52a1033ba0820"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/enum-not-run-pass.json",
+      "sha256": "e4046ae4498b8f81dc6eb545eacf3f6268fe5940138526ddc7ed82dc79240420"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/enum-pass.json",
+      "sha256": "4037588053b616202edb83a64e1bfa584ceefd14f73b9851e35faad1825b65d1"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/if-fail.json",
+      "sha256": "56532df92dac2adc64177af87d785659cd576433b2d215f175656b4eae957b3a"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/if-pass.json",
+      "sha256": "4037588053b616202edb83a64e1bfa584ceefd14f73b9851e35faad1825b65d1"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/items-fail.json",
+      "sha256": "afe0e336ecf9da62a9fcc9575a1eb5950e4972335533bbbccc33614100f4c59b"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/items-pass.json",
+      "sha256": "43a024f39cafc72f51a09519b5b7ac4a57cdc8a658fe9b9d8976845b518fc116"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/minItems-fail.json",
+      "sha256": "e479f20d093ae8332611435356f4502884ba093438e97478c476c60f16c016a4"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/minItems-pass.json",
+      "sha256": "364f5bad05301e3d969b24ba0f8012c645953604d16d9c21cba37e2c7dfe7703"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/minLength-fail.json",
+      "sha256": "b28703a449a9336eaae3299b2dcd6ed5971dd4086381f072763401c10c054233"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/minLength-pass.json",
+      "sha256": "4037588053b616202edb83a64e1bfa584ceefd14f73b9851e35faad1825b65d1"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/minimum-counts-negative-fail.json",
+      "sha256": "1d31acdc25378501c22ea9f7efe52bd2d227dbd442f7aa78b33a357fc9e6b123"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/minimum-fail.json",
+      "sha256": "9fb2d39bfbb706cfe6744bf77545dc0a212e76d635d0ff665182974cd0c4e354"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/minimum-pass.json",
+      "sha256": "5193ef253dd824f3b8a8403096c397bdbd49049b4ced61023e857096ec2e6aaa"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/pattern-at-out-of-range-fail.json",
+      "sha256": "e36f6355196f4a64f71704b3808cc2eec0f5a0586da2d539c45b793dcf56ed36"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/pattern-commit-uppercase-fail.json",
+      "sha256": "f1b6695be0ffcd26b3de2bc61d7d126a34be1af0ebb0d3a3b3393a9c2b9a3872"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/pattern-fail.json",
+      "sha256": "5b7cf967aeb51f6de2d16027ff887291c6e98548d1e4bb0739fe47ae055fec27"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/pattern-pass.json",
+      "sha256": "4037588053b616202edb83a64e1bfa584ceefd14f73b9851e35faad1825b65d1"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/properties-fail.json",
+      "sha256": "73a0d310c9cb79acab82b69d85731f1ff7f8a9c01932dc0269af285bd8ddbe96"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/properties-pass.json",
+      "sha256": "4037588053b616202edb83a64e1bfa584ceefd14f73b9851e35faad1825b65d1"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/required-fail.json",
+      "sha256": "88e23cc422e171e4b836b6f24fe644e7daeef1b6570563710b9c6fee2942be6b"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/required-pass.json",
+      "sha256": "4037588053b616202edb83a64e1bfa584ceefd14f73b9851e35faad1825b65d1"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/then-fail.json",
+      "sha256": "56532df92dac2adc64177af87d785659cd576433b2d215f175656b4eae957b3a"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/then-pass.json",
+      "sha256": "4037588053b616202edb83a64e1bfa584ceefd14f73b9851e35faad1825b65d1"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/type-fail.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/at-report/type-pass.json",
+      "sha256": "4037588053b616202edb83a64e1bfa584ceefd14f73b9851e35faad1825b65d1"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/$ref-fail.json",
+      "sha256": "0d86253956b9960e186adca8f46935265d15fbdc4f50555c67747574f7246392"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/$ref-pass.json",
+      "sha256": "db938681efd56e7e4c4e6b5b195ca616473b990aa3301ff13cf3f51b84f90f60"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/additionalProperties-fail.json",
+      "sha256": "808e78532d3d65f319a4c6b36209848770ca95a5fa9c08aee2b0258f8f8cdae2"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/additionalProperties-pass.json",
+      "sha256": "a7925ad1f99fcaca302674fc84256c6bb09d5806ce5f9ca6f8d49e809d41c1ff"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/anyOf-fail.json",
+      "sha256": "c2a82a1cbcd819df1b5380db8b7354f5e50f634547649b498511fa0ef9e6b741"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/anyOf-pass.json",
+      "sha256": "743e327fb6e9d8d054cc966e61a10953f2989e03b98648fedfb161ad0a90d9d5"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/enum-exit-two-fail.json",
+      "sha256": "14378a227d391c86b3486e4222767df349bccef017f9237b414f2e4c44e6d026"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/enum-fail.json",
+      "sha256": "402d4da5766b699fa2cdd75a986e4aff884baa214d6f19e03020d7b993c1bb82"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/enum-pass.json",
+      "sha256": "a7925ad1f99fcaca302674fc84256c6bb09d5806ce5f9ca6f8d49e809d41c1ff"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/if-exit-one-null-code-pass.json",
+      "sha256": "edeadc624773ed6e26576aac6be52a00daf842ce618d1b4a2d4db147a6490e50"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/if-fail.json",
+      "sha256": "a96f776671443e58ca661b575861f4e075cfe24271338be10fdbc5ce4a3f38c0"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/if-pass.json",
+      "sha256": "a7925ad1f99fcaca302674fc84256c6bb09d5806ce5f9ca6f8d49e809d41c1ff"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/properties-fail.json",
+      "sha256": "1fb77c2b956b51fbacc3186a817adcfd3c30823da7b31ba09da8d7edd38ec4b7"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/properties-pass.json",
+      "sha256": "a7925ad1f99fcaca302674fc84256c6bb09d5806ce5f9ca6f8d49e809d41c1ff"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/required-fail.json",
+      "sha256": "5bc232b82de377a5655a39a2af9d7ae0fc868de5b9df957e18905cb914606c88"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/required-pass.json",
+      "sha256": "a7925ad1f99fcaca302674fc84256c6bb09d5806ce5f9ca6f8d49e809d41c1ff"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/then-fail.json",
+      "sha256": "a96f776671443e58ca661b575861f4e075cfe24271338be10fdbc5ce4a3f38c0"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/then-pass.json",
+      "sha256": "a7925ad1f99fcaca302674fc84256c6bb09d5806ce5f9ca6f8d49e809d41c1ff"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/type-fail.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/cases/codes/type-pass.json",
+      "sha256": "a7925ad1f99fcaca302674fc84256c6bb09d5806ce5f9ca6f8d49e809d41c1ff"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/piece.json",
+      "sha256": "6b0a9ca92444c4fccb25478c12825ef8c909e13dea6d5ea04f80f2542dd3f8d2"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/schemas/at-report.schema.json",
+      "sha256": "5aa219d228c2f9fb5ac36dae44dafb24ac90d15735ff10c943d9a64913606e62"
+    },
+    {
+      "path": "pieces/contract-commons-at-report/schemas/codes.schema.json",
+      "sha256": "44d0b0785b99d121712a237da69f20053fb463d1a39ce7128e192a0882e50965"
+    },
+    {
       "path": "pieces/contract-commons-piece/README.md",
       "sha256": "0b1d708a21a48994741aab368f1dbc397a940759bc13cbd14a999b57e4db2d62"
     },

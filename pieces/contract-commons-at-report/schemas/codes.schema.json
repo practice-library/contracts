@@ -1,0 +1,60 @@
+{
+  "$defs": {
+    "code": {
+      "enum": [
+        "commons.at_not_implemented",
+        "commons.input_missing",
+        "commons.gate_plan_absent",
+        "commons.inconclusive"
+      ],
+      "type": "string"
+    },
+    "exit": {
+      "enum": [
+        0,
+        1
+      ],
+      "type": "integer"
+    }
+  },
+  "$id": "urn:easyly:schema:commons.codes:0.1.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "if": {
+    "properties": {
+      "exit": {
+        "enum": [
+          0
+        ]
+      }
+    }
+  },
+  "properties": {
+    "code": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "urn:easyly:schema:commons.codes:0.1.0#/$defs/code"
+        }
+      ]
+    },
+    "exit": {
+      "$ref": "urn:easyly:schema:commons.codes:0.1.0#/$defs/exit"
+    }
+  },
+  "required": [
+    "exit",
+    "code"
+  ],
+  "then": {
+    "properties": {
+      "code": {
+        "type": "null"
+      }
+    }
+  },
+  "title": "commons-at outcome",
+  "type": "object"
+}
