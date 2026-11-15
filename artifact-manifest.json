@@ -457,6 +457,46 @@
       "sha256": "21ef91dd31ebd0c59131705499f20fbb29ea0427012b1bcac698f7a1be32701a"
     },
     {
+      "path": "pieces/lib-at-core/README.md",
+      "sha256": "e876baba2153870fe4533140f4244919cb5a1b4f9b7be1c4498f98812c4cf343"
+    },
+    {
+      "path": "pieces/lib-at-core/piece.json",
+      "sha256": "325cac23d958483fc70742c4acf70e8f09ae1ec61e247e406b75e9e3a5dc64ff"
+    },
+    {
+      "path": "pieces/lib-at-core/src/args.go",
+      "sha256": "72c2b759d8fd0031c747b89ae6e3772f8c3766dc8db09d7ddf65d20e79f077e8"
+    },
+    {
+      "path": "pieces/lib-at-core/src/args_test.go",
+      "sha256": "a0616d9ad3e55126a63d17a33e478014671297b2a3c5fcd3776074eb01880f3c"
+    },
+    {
+      "path": "pieces/lib-at-core/src/emit.go",
+      "sha256": "f9cd13c40e16eb139a95d644901c780742df7eee2553150627c304c1db2943c6"
+    },
+    {
+      "path": "pieces/lib-at-core/src/emit_test.go",
+      "sha256": "c7ff565815b60da4813aeb5d8ff8d133be7cfedb908397c1cc16716f3fbe106c"
+    },
+    {
+      "path": "pieces/lib-at-core/src/schemas.go",
+      "sha256": "0c52197f4a7536235fb5b0f8e550c5cfb07816a4cdc1e98ddcc2fade4ca71a24"
+    },
+    {
+      "path": "pieces/lib-at-core/src/schemas_test.go",
+      "sha256": "ee3db7da73a9d0c295c0f60b8a53aced45bf9849f124b345b0f1b9d4e83f6fb3"
+    },
+    {
+      "path": "pieces/lib-at-core/src/validate.go",
+      "sha256": "b071b3e4e25f99108175c9bf828cce706fc3dce5c53d4239cc12100ffc8ca554"
+    },
+    {
+      "path": "pieces/lib-at-core/src/validate_test.go",
+      "sha256": "f28e12b803be5d4d3bf29081dfd9c9e0a49d3b4bd572296f8f896c9fc2de41cd"
+    },
+    {
       "path": "policy/commons.json",
       "sha256": "f6385e92da1ed910db492140865dbcf94b0647362399e456e566c46f14854f3e"
     },
