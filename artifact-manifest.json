@@ -6,7 +6,7 @@
     },
     {
       "path": ".github/denylist.json",
-      "sha256": "6988f8a20f04395582c87185bf34eaf7edc78cd548966a3cc048dd345fe229d7"
+      "sha256": "8eb30a4f9d19075c0c5e7ba8036a4876af5bfd74718b00cf89d34e3b5c005e96"
     },
     {
       "path": ".github/required-checks.json",
