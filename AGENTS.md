@@ -6,8 +6,9 @@ Humans and agents follow the same rules here.
 
 - A package lives in `pieces/<package>/` and declares itself in `piece.json`.
 - Kinds: contract (schemas and cases, no code), binding (generated), library, tool, plug or runtime.
-- A package depends only on contracts, bindings, libraries, the language standard library and pinned, vendored
-  third-party modules. A tool never imports another tool, and a plug or runtime never imports another plug or runtime.
+- A package depends only on contracts, bindings, libraries, the language standard library and
+  third-party modules pinned in `go.sum`. A tool never imports another tool, and a plug or runtime
+  never imports another plug or runtime.
 - Size: at most 1,500 hand-written production lines per code package and 400 per file; at most 40 schema files per
   contract package; a README of at most 40 lines.
 - Generated files carry a "Generated from … Do not edit." header and are never edited by hand.

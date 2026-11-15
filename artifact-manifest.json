@@ -14,11 +14,11 @@
     },
     {
       "path": ".github/workflows/gate.yml",
-      "sha256": "aff20737a4827090cb19867fbfbcc65cb743725507a82ca8be3ddee86995aa0d"
+      "sha256": "6851b65b0ce4eb4d73d7b78e194a2f3c9cf232d0487d1006c57cec08597133a3"
     },
     {
       "path": "AGENTS.md",
-      "sha256": "d977f274dd2d422fdf5b51e9e8fa375c3f5e1769dbeb9ed7594f5249d1259041"
+      "sha256": "af1fe599d2d02dd1608a3e9f6b6c57be38ecae8f455e09e6468e26fa0e3a3039"
     },
     {
       "path": "LICENSE",
@@ -30,7 +30,11 @@
     },
     {
       "path": "go.mod",
-      "sha256": "b00327f66aa7702efecb1359244e79a6a27b9bee03cf6d1195ba1ef3ea4df5c3"
+      "sha256": "70cc16c5a72645a9bc674c5d4e36bdeaf81dbddb205f01f35ed5ab54924e6e1d"
+    },
+    {
+      "path": "go.sum",
+      "sha256": "190d9eb7b0bf958a72cdfa38e70887ba644442b0389537f21fcf5eff3daf325f"
     },
     {
       "path": "pieces/contract-commons-at-report/README.md",
@@ -451,6 +455,14 @@
     {
       "path": "pieces/contract-commons-piece/schemas/piece.schema.json",
       "sha256": "21ef91dd31ebd0c59131705499f20fbb29ea0427012b1bcac698f7a1be32701a"
+    },
+    {
+      "path": "policy/commons.json",
+      "sha256": "f6385e92da1ed910db492140865dbcf94b0647362399e456e566c46f14854f3e"
+    },
+    {
+      "path": "toolchains.lock",
+      "sha256": "e14bf4ef91d980ab94c2923f7a089fdf87e30e0eaf111f7b102bc84964518859"
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "codeTable": "pieces/contract-commons-at-report/schemas/codes.schema.json",
+  "implemented": [],
+  "inventorySchema": "pieces/contract-commons-piece/schemas/inventory.schema.json",
+  "limits": {
+    "contractSchemaFiles": 40,
+    "fileLines": 400,
+    "packageLines": 1500,
+    "prLines": 600,
+    "readmeColumns": 100,
+    "readmeLines": 40
+  },
+  "pieceSchema": "pieces/contract-commons-piece/schemas/piece.schema.json",
+  "reportSchema": "pieces/contract-commons-at-report/schemas/at-report.schema.json",
+  "sizeFixtures": [
+    "selftest/",
+    "examples/",
+    "counter-examples/",
+    "tests/fixtures/",
+    "vendor/",
+    "go.sum",
+    "inventory.json",
+    "cases/"
+  ]
+}
