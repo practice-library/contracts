@@ -1,0 +1,75 @@
+{
+  "pieces": [
+    {
+      "path": "pieces/contract-commons-at-report",
+      "piece": {
+        "consumes": [],
+        "generatorConsumes": [],
+        "implements": [],
+        "kind": "contract",
+        "owner": "practice-library/maintainers",
+        "testConsumes": [],
+        "thirdParty": [],
+        "tier": 1
+      }
+    },
+    {
+      "path": "pieces/contract-commons-piece",
+      "piece": {
+        "consumes": [],
+        "generatorConsumes": [],
+        "implements": [],
+        "kind": "contract",
+        "owner": "practice-library/maintainers",
+        "testConsumes": [],
+        "thirdParty": [],
+        "tier": 1
+      }
+    },
+    {
+      "path": "pieces/lib-at-core",
+      "piece": {
+        "consumes": [
+          "pieces/contract-commons-at-report",
+          "pieces/contract-commons-piece"
+        ],
+        "generatorConsumes": [],
+        "implements": [],
+        "kind": "library",
+        "owner": "practice-library/maintainers",
+        "testConsumes": [],
+        "thirdParty": [
+          {
+            "name": "github.com/santhosh-tekuri/jsonschema/v6",
+            "path": "vendor/github.com/santhosh-tekuri/jsonschema/v6",
+            "sha256": "79282583888de6fd146e513f01e09bd3b228976942d2114688e97608279b1ebe",
+            "version": "v6.0.3"
+          },
+          {
+            "name": "golang.org/x/text",
+            "path": "vendor/golang.org/x/text",
+            "sha256": "b9814897e0e09cd576a7a013f066c7db537a3d538d2e0f60f0caee9bc1b3f4af",
+            "version": "v0.14.0"
+          }
+        ],
+        "tier": 1
+      }
+    },
+    {
+      "path": "pieces/lib-at-inventory",
+      "piece": {
+        "consumes": [
+          "pieces/contract-commons-piece",
+          "pieces/lib-at-core"
+        ],
+        "generatorConsumes": [],
+        "implements": [],
+        "kind": "library",
+        "owner": "practice-library/maintainers",
+        "testConsumes": [],
+        "thirdParty": [],
+        "tier": 1
+      }
+    }
+  ]
+}
