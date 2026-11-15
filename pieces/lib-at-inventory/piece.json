@@ -1,0 +1,13 @@
+{
+  "consumes": [
+    "pieces/contract-commons-piece",
+    "pieces/lib-at-core"
+  ],
+  "generatorConsumes": [],
+  "implements": [],
+  "kind": "library",
+  "owner": "practice-library/maintainers",
+  "testConsumes": [],
+  "thirdParty": [],
+  "tier": 1
+}

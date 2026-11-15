@@ -37,6 +37,10 @@
       "sha256": "190d9eb7b0bf958a72cdfa38e70887ba644442b0389537f21fcf5eff3daf325f"
     },
     {
+      "path": "inventory.json",
+      "sha256": "2990d77de59f1c751706b129a8b0880938b528fa94c83810b5379e0c0959b2d3"
+    },
+    {
       "path": "pieces/contract-commons-at-report/README.md",
       "sha256": "7807ba40c7553e67c20a151cbde8f8c9bf4f064b5298f71a995ed989ce74da78"
     },
@@ -495,6 +499,30 @@
     {
       "path": "pieces/lib-at-core/src/validate_test.go",
       "sha256": "f28e12b803be5d4d3bf29081dfd9c9e0a49d3b4bd572296f8f896c9fc2de41cd"
+    },
+    {
+      "path": "pieces/lib-at-inventory/README.md",
+      "sha256": "ad80c9def2732eca30f6292aa3b66726487eee392d873d0cd171d39ab6049cca"
+    },
+    {
+      "path": "pieces/lib-at-inventory/piece.json",
+      "sha256": "7d3dd296601cb515f5e29ace0dcc69253a4fec164a665cebb3a9c888a8424b12"
+    },
+    {
+      "path": "pieces/lib-at-inventory/src/affected.go",
+      "sha256": "f7742dd7d4dd0974c0278b4a4246ee16157b93fcedca2bee199423c353957c0c"
+    },
+    {
+      "path": "pieces/lib-at-inventory/src/affected_test.go",
+      "sha256": "e0514eb4d1c9dd7a2f442ac1f9fcedd74b84788a67d5e76030386a59d1d8ac4d"
+    },
+    {
+      "path": "pieces/lib-at-inventory/src/inventory.go",
+      "sha256": "cf86e8eb4d76ae2c1e5a6dd455fd4e13f5c8498c1fbc20fcc36e32508c9dfdc5"
+    },
+    {
+      "path": "pieces/lib-at-inventory/src/inventory_test.go",
+      "sha256": "d1bcff2e8022437c10cb8085376a905856909714bd6716326c6817f14e218eeb"
     },
     {
       "path": "policy/commons.json",
